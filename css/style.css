@@ -5,37 +5,136 @@
     box-sizing: border-box;
 }
 
+/* generics */
+.body {
+    font-family:Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+}
+
+header {
+    background-color: #3161e0;
+    height: 80px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 43px;
+}
 
 /* utilities */
 
 
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-.flex-conteiner-header {
-    height: 50px;
+.flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+  }
+
+
+/* header */
+.navbar {
+    height: 80px;
     align-items: center;
-    display: flex;
-    flex-direction: row;
-    background-color: #2596be;
-    justify-content: center;
-    padding: 0 100px;
+}
+
+.logo {
+    flex-basis: 20px;
+    padding: 0 5px;
+}
+
+.link {
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+
+}
+
+.login {
+    flex-basis: 20px;
+    text-align: right;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+.badgeBTN {
+    border-radius: 15px;
+    padding: 7px;
+    border: none;
+}
+
+.badge-scarica {
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    margin-right: 30px;
+}
+
+.badge-apri {
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+   
+
+.spotlight {
+    min-height: 400px;
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/jumbo.png);
+}   
+
+.box-centrale {
+    flex-basis: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+.text-spotlight {
+    text-align: center;
+    font-size: 21px;
+    margin-top: 20px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 20px;
+    margin-top: 20px;
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+    margin-right: 5px;
 }
 
 
-.flex-conteiner {
+
+
+/* .flex-conteiner {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 30px 100px;
-}
+} */
 
-.flex-conteiner-blue {
+/* .flex-conteiner-blue {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 30px 100px;
-    background-color: #063970;
+    background-image:url(img) ;
     justify-content: center;
-}
+} */
 
 
 .flex-conteiner-grey {
@@ -73,38 +172,13 @@
 
 
 
-.logo {
-    background-color: #eeeee4;
-    border: 1px dashed black;
-    width: 30%;
-    padding: 0 5px;
 
-}
-
-.link {
-    background-color: #eeeee4;
-    border: 1px dashed black;
-    width: 40%;
-    text-align: center;
-}
-
-.login {
-    background-color: #eeeee4;
-    border: 1px dashed black;
-    width: 30%;
-    text-align: right;
-    padding: 0 5px;
-}
 
 /* corpo centrale */
 
 
 
-.box-centrale {
-    flex-basis: 80%;
-    min-height: 200px;
-    background-color: #abdbe3;
-}
+
 
 .box-leftBG {
     flex-basis: 60%;
